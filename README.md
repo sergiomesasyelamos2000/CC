@@ -16,6 +16,9 @@
     - [Replicación de ownCloud](#Replicación_de_ownCloud)
     - [HAProxy](#HAProxy)
 - [Pruebas realizadas](#Pruebas_realizadas)
+- [Despliegue de la práctica](#despliegue)
+- [Conclusiones](#conclusiones)
+- [Referencias](#referencias)
 
 
 <a name="Entorno_de_desarrollo"></a>
@@ -252,3 +255,29 @@ Se ha probado el correcto funcionamiento de ambos escenarios compartiendo ficher
 ![test](./imgs/test.png)
 ![test](./imgs/test2.png)
 
+<a name="despliegue"></a>
+## Despliegue de la práctica
+Se debe destacar que en el archivo `docker-compose_escenario1.yml` se encuentra lo correspondiente al escenario 1. Sin embargo, dado que el escenario 2 abarca ambos, se procederá a levantar dichos servicios. Para poder realizar las diferentes pruebas y con el objetivo de facilitar dicho despliegue, se ha creado un script llamado `build.sh` que permite echar abajo (`down`) los contenedores y volúmenes que existieran y levantarlos nuevamente. Además, se ha incluido una sentencia para poder ejecutar otro script que se encuentra en la carpeta `./data/slapd/ldif` y que se encarga de añadir algunos usuarios, categorías y modificar las contraseñas de dichos usuarios.
+Por tanto, una vez que se dispone de todos los archivos de condifuración, basta con ejecutar el siguiente comando:
+
+```
+./build.sh
+```
+En caso de ser necesario, se puede acceder a las estadísticas de HAProxy para ver qué replicas están funcionando o cuál de ellas ha caído. Para ello, se debe acceder a la siguiente URL:
+
+```
+http://localhost/haproxy?stats
+```
+
+<a name="conclusiones"></a>
+## Conclusiones
+El desarrollo de la práctica me ha permitdo no solamente conocer y aprender términos y tecnologías nuevas sino también aprender a solucionar porblemas atípicos y que requieren de mucha dedicación y paciencia. Sin ir más lejos, durante el desarrollo de la práctica he tenido un problema principal y ha sido el certificado SSL de ownCloud, el cual indicaba que había expirado y sin el cual no podría hacer la integración con LDAP. Sin embargo, tras días de intentar todo lo posible sin éxito, decidí leer toda la documentación oficial de ownCloud y descubrí que el problema era la imagen utilizada (había quedado desfasada) y el puerto usado, ya que en las nuevas versiones era necesario utilizar el puerto 8080 para llevar a cabo conexiones HTTP.
+Tras realizar los dos escenarios me he quedado con la "espina" de poder intentar, al menos, replicar el escenario 2 con Kubernetes, ya que es una herramienta que me llama mucho la atención y de la que me gustaría aprender. Sin embargo, debido al problema anteriormente mencionado, no me ha dado tiempo a más.
+
+<a name="referencias"></a>
+## Referencias
+- [](https://github.com/osixia/docker-openldap)
+- [](https://www.openldap.org/doc/admin26/quickstart.html)
+- [](https://computingforgeeks.com/run-openldap-server-in-docker-containers/#google_vignette)
+- [](http://docs.haproxy.org/2.6/intro.html)
+- [](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
