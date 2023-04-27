@@ -276,8 +276,8 @@ Tras realizar los dos escenarios me he quedado con la "espina" de poder intentar
 
 <a name="referencias"></a>
 ## Referencias
-- [](https://github.com/osixia/docker-openldap)
-- [](https://www.openldap.org/doc/admin26/quickstart.html)
-- [](https://computingforgeeks.com/run-openldap-server-in-docker-containers/#google_vignette)
-- [](http://docs.haproxy.org/2.6/intro.html)
-- [](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
+- [https://github.com/osixia/docker-openldap](https://github.com/osixia/docker-openldap)
+- [https://www.openldap.org/doc/admin26/quickstart.html](https://www.openldap.org/doc/admin26/quickstart.html)
+- [https://computingforgeeks.com/run-openldap-server-in-docker-containers/#google_vignette](https://computingforgeeks.com/run-openldap-server-in-docker-containers/#google_vignette)
+- [http://docs.haproxy.org/2.6/intro.html](http://docs.haproxy.org/2.6/intro.html)
+- [https://doc.owncloud.com/server/next/admin_manual/installation/docker/](https://doc.owncloud.com/server/next/admin_manual/installation/docker/)
