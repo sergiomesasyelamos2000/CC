@@ -1,20 +1,20 @@
-# Práctica 1
+# Práctica 1: Despliegue de servicio ownCloud
 
 ## Contenidos
 
 - [Entorno de desarrollo](#Entorno_de_desarrollo)
 - [Descripción de la práctica](#Descripción_de_la_práctica)
 - [Arquitectura cloud propuesta: Escenario 1](#Arquitectura_cloud_propuesta_Escenario_1)
-- [Arquitectura cloud implementada: Escenario 1](#Arquitectura_cloud_implementada_Escenario_1)
-- [Servicio web ownCloud](#Servicio_web_ownCloud)
-- [MariaDB](#MariaDB)
-- [Redis](#Redis)
-- [LDAP](#LDAP)
+    - [Arquitectura cloud implementada: Escenario 1](#Arquitectura_cloud_implementada_Escenario_1)
+    - [Servicio web ownCloud](#Servicio_web_ownCloud)
+    - [MariaDB](#MariaDB)
+    - [Redis](#Redis)
+    - [LDAP](#LDAP)
 - [Arquitectura cloud propuesta: Escenario 2](#Arquitectura_cloud_propuesta_Escenario_2)
-- [Arquitectura cloud implementada: Escenario 2](#Arquitectura_cloud_implementada_Escenario_2)
-- [Redes](#Redes)
-- [Replicación de ownCloud](#Replicación_de_ownCloud)
-- [HAProxy](#HAProxy)
+    - [Arquitectura cloud implementada: Escenario 2](#Arquitectura_cloud_implementada_Escenario_2)
+    - [Redes](#Redes)
+    - [Replicación de ownCloud](#Replicación_de_ownCloud)
+    - [HAProxy](#HAProxy)
 - [Pruebas realizadas](#Pruebas_realizadas)
 
 
