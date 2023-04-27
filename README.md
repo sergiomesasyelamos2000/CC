@@ -45,7 +45,7 @@ En este caso, se incluyen los siguientes 4 servicios:
 <a name="Arquitectura_cloud_implementada_Escenario_1"></a>
 ### Arquitectura cloud implementada: Escenario 1
 
-A continuación, se procederá a explicar en detalle los servicios implementados así como los diferentes volúmenes creados para cada uno de los servicios necesarios. Se debe destacar que se ha hecho uso de Docker Compose para la puesta en marcha de esta arquitectura por su facilidad de integración y rapidez.
+A continuación, se procederá a explicar en detalle los servicios implementados así como los diferentes volúmenes creados para cada uno de los servicios necesarios. Se debe destacar que se ha hecho uso de Docker Compose para la puesta en marcha de esta arquitectura por su facilidad de integración y rapidez. El archivo docker-compose puede encontrarse [aquí](./docker-compose_escenario1.yml).
 
 <a name="Servicio_web_ownCloud"></a>
 #### Servicio web ownCloud
@@ -209,7 +209,7 @@ En este caso, se incluyen los siguientes servicios:
 <a name="Arquitectura_cloud_implementada_Escenario_2"></a>
 ### Arquitectura cloud implementada: Escenario 2
 
-A continuación, se procederá a explicar en detalle los servicios implementados así como los diferentes volúmenes creados para cada uno de los servicios necesarios así como la red virtual interna creada. Se debe destacar que se ha hecho uso de Docker Compose para la puesta en marcha de esta arquitectura por su facilidad de integración y rapidez.
+A continuación, se procederá a explicar en detalle los servicios implementados así como los diferentes volúmenes creados para cada uno de los servicios necesarios así como la red virtual interna creada. Se debe destacar que se ha hecho uso de Docker Compose para la puesta en marcha de esta arquitectura por su facilidad de integración y rapidez. El archivo docker-compose puede encontrarse [aquí](./docker-compose.yml).
 
 <a name="Redes"></a>
 #### Redes
